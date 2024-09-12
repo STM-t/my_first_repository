@@ -166,3 +166,5 @@ async def process_other_answers(message: Message):
 
 if __name__ == '__main__':
     dp.run_polling(bot)
+
+#12.09.2024
