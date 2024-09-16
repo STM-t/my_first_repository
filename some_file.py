@@ -38,3 +38,8 @@ async def answer_if_not_admins_update(message: Message):
 
 if __name__ == '__main__':
     dp.run_polling(bot)
+
+
+
+
+    #укопшузокпуш
