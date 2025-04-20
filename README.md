@@ -1,6 +1,8 @@
 # Microservice Deployment with Vagrant & Ansible
 
-Этот Python-микросервиис собирает Prometheus метрики. Для раскатки этого сервиса используется Ansible и Vagrant. Гипервизор 2-го типа - virt-manager(libvirt). ОС для ВМ - AlmaLinux 9
+Этот Python-микросервиис собирает Prometheus метрики. Для раскатки этого сервиса используется Ansible и Vagrant. 
+Гипервизор 2-го типа - virt-manager(libvirt) 
+ОС для ВМ - AlmaLinux 9
 
 ## Струкутра проекта
 
@@ -67,7 +69,7 @@
    vagrant up --provider=libvirt
    ```
    
-### 2. Microservice Deployment with Ansible
+### 2. Использование Ansible
 
 1. Установка Ansible:
   
@@ -94,10 +96,10 @@
    ansible-playbook playbook.yml -K
    ```
 
-После запуска ввести пароль password. Он указывается в Vagranfile
+После запуска ввести пароль _password_. Он указывается в Vagranfile
    
 
-### 3. Verify Deployment
+### 3. Проверка метрик
 
 1. Подключение к ВМ:
   
