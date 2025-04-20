@@ -35,6 +35,8 @@
 - virt-manager
 - Vagrant
 - Ansible
+- Docker
+- Python
 
 ## Шаги развертывания
 
