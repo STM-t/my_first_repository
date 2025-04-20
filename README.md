@@ -90,6 +90,8 @@
    ```
    ssh-copy-id stm@<VM_IP>
    ```
+
+Пароль по умолчанию:_password_, он может быть изменен в Vagranfile
    
 7. Запуск Ansible playbook:
   
