@@ -44,39 +44,55 @@
    
 3. Установка Vagrant:
   
-   ```sudo apt install vagrant```
+   ```
+   sudo apt install vagrant
+   ```
    
-4. Установка libvirt плагина для Vagrant:
+5. Установка libvirt плагина для Vagrant:
   
-  ```vagrant plugin install vagrant-libvirt```
+  ```
+  vagrant plugin install vagrant-libvirt
+```
    
 4. Установка AlmaLinux 9 box:
   
-   ```vagrant box add generic/alma9```
+   ```
+   vagrant box add generic/alma9
+   ```
    
-5. Запуск ВМ:
+6. Запуск ВМ:
   
-   ```cd vagrant```
-  ```vagrant up --provider=libvirt```
+  ```
+   cd vagrant
+   vagrant up --provider=libvirt
+  ```
    
 ### 2. Microservice Deployment with Ansible
 
 1. Установка Ansible:
   
-   ```sudo apt install ansible```
+   ```
+   sudo apt install ansible
+   ```
    
-2. Генерация SSH ключа:
+3. Генерация SSH ключа:
   
-   ```ssh-keygen```
+   ```
+   ssh-keygen
+   ```
    
-3. Copy SSH key to the VM (password is "password"):
+5. Copy SSH key to the VM (password is "password"):
   
-   ```ssh-copy-id stm@<VM_IP>```
+   ```
+   ssh-copy-id stm@<VM_IP>
+   ```
    
-4. Запуск Ansible playbook:
+7. Запуск Ansible playbook:
   
-   ```cd ../ansible```
-   ```ansible-playbook playbook.yml -K```
+   ```
+   cd ../ansible
+   ansible-playbook playbook.yml -K
+   ```
 
 После запуска ввести пароль password. Он указывается в Vagranfile
    
@@ -85,10 +101,14 @@
 
 1. Подключение к ВМ:
   
-   ```ssh stm@<VM_IP>```
+   ```
+   ssh stm@<VM_IP>
+   ```
    
-2. Метрики с микросервиса:
+3. Метрики с микросервиса:
   
-  ``` curl http://localhost:8080```
+  ```
+  curl http://localhost:8080
+  ```
    
 
