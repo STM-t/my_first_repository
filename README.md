@@ -94,7 +94,7 @@
 7. Запуск Ansible playbook:
   
    ```
-   cd ../ansible
+   cd ansible
    ansible-playbook playbook.yml -K
    ```
 
