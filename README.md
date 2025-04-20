@@ -38,13 +38,15 @@
 
 1. Устновка virt-manager:
   
-   ```sudo apt install virt-manager qemu-kvm libvirt-daemon-system libvirt-clients```
+   ```
+   sudo apt install virt-manager qemu-kvm libvirt-daemon-system libvirt-clients
+   ```
    
-2. Установка Vagrant:
+3. Установка Vagrant:
   
    ```sudo apt install vagrant```
    
-3. Установка libvirt плагина для Vagrant:
+4. Установка libvirt плагина для Vagrant:
   
   ```vagrant plugin install vagrant-libvirt```
    
