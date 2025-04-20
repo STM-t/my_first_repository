@@ -50,9 +50,9 @@
    
 5. Установка libvirt плагина для Vagrant:
   
-  ```
-  vagrant plugin install vagrant-libvirt
-```
+   ```
+   vagrant plugin install vagrant-libvirt
+   ```
    
 4. Установка AlmaLinux 9 box:
   
@@ -62,10 +62,10 @@
    
 6. Запуск ВМ:
   
-  ```
+   ```
    cd vagrant
    vagrant up --provider=libvirt
-  ```
+   ```
    
 ### 2. Microservice Deployment with Ansible
 
@@ -107,8 +107,8 @@
    
 3. Метрики с микросервиса:
   
-  ```
-  curl http://localhost:8080
-  ```
+   ```
+   curl http://localhost:8080
+   ```
    
 
