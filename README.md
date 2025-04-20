@@ -4,6 +4,7 @@
 
 ## Струкутра проекта
 
+```
 .
 ├── vagrant/
 │   └── Vagrantfile
@@ -21,6 +22,8 @@
             └── tasks/
                 ├── docker-setup.yml
                 └── main.yml
+```
+
 ## Используемый стек
 
 - Fedora 41
@@ -39,39 +42,39 @@
    
 2. Установка Vagrant:
   
-   sudo apt install vagrant
+   ```sudo apt install vagrant```
    
 3. Установка libvirt плагина для Vagrant:
   
-   vagrant plugin install vagrant-libvirt
+  ```vagrant plugin install vagrant-libvirt```
    
 4. Установка AlmaLinux 9 box:
   
-   vagrant box add generic/alma9
+   ```vagrant box add generic/alma9```
    
 5. Запуск ВМ:
   
-   cd vagrant
-   vagrant up --provider=libvirt
+   ```cd vagrant```
+  ```vagrant up --provider=libvirt```
    
 ### 2. Microservice Deployment with Ansible
 
 1. Установка Ansible:
   
-   sudo apt install ansible
+   ```sudo apt install ansible```
    
 2. Генерация SSH ключа:
   
-   ssh-keygen
+   ```ssh-keygen```
    
 3. Copy SSH key to the VM (password is "password"):
   
-   ssh-copy-id stm@<VM_IP>
+   ```ssh-copy-id stm@<VM_IP>```
    
 4. Запуск Ansible playbook:
   
-   cd ../ansible
-   ansible-playbook playbook.yml -K
+   ```cd ../ansible```
+   ```ansible-playbook playbook.yml -K```
 
 После запуска ввести пароль password. Он указывается в Vagranfile
    
@@ -80,9 +83,10 @@
 
 1. Подключение к ВМ:
   
-   ssh stm@<VM_IP>
+   ```ssh stm@<VM_IP>```
    
 2. Метрики с микросервиса:
   
-   curl http://localhost:8080
+  ``` curl http://localhost:8080```
    
+
