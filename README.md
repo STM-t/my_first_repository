@@ -1,4 +1,4 @@
-# Microservice Deployment with Vagrant & Ansible
+# Развертывание микросервиса с помощью Ansible и Vagrant
 
 Этот Python-микросервиис собирает Prometheus метрики. Для раскатки этого сервиса используется Ansible и Vagrant. 
 
@@ -36,7 +36,7 @@
 - Vagrant
 - Ansible
 
-## Deployment Steps
+## Шаги развертывания
 
 ### 1. Настройка ВМ с помощью Vagrant
 
